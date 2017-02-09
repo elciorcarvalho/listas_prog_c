@@ -1,4 +1,7 @@
 #include <stdio.h>
+int cod;
+float preco;
+float tab_preco[9] = {8.90, 3.50, 1.80, 2.50, 2.05, 2.10, 4.20, 2.25, 1.69, 1.58}
 
 void main(void)
 {
@@ -7,25 +10,31 @@ void main(void)
 	printf("|CODIGO            |PRODUTO           |PRECO UNITARIO    |\n");
 	printf("----------------------------------------------------------\n");
 	printf("----------------------------------------------------------\n");
-	printf("|001               |Arroz             |R$ 8,90           |\n");
+	printf("|001               |Arroz             |R$ %.2f           |\n", tab_preco[0]);
 	printf("----------------------------------------------------------\n");
-	printf("|002               |Feijao            |R$ 8,90           |\n");
+	printf("|002               |Feijao            |R$ %.2f           |\n", tab_preco[1]);
 	printf("----------------------------------------------------------\n");
-	printf("|003               |oleo              |R$ 8,90           |\n");
+	printf("|003               |oleo              |R$ %.2f           |\n", tab_preco[2]);
 	printf("----------------------------------------------------------\n");
-	printf("|004               |Farinha           |R$ 8,90           |\n");
+	printf("|004               |Farinha           |R$ %.2f           |\n", tab_preco[3]);
 	printf("----------------------------------------------------------\n");
-	printf("|005               |Acucar            |R$ 8,90           |\n");
+	printf("|005               |Acucar            |R$ %.2f           |\n", tab_preco[4]);
 	printf("----------------------------------------------------------\n");
-	printf("|006               |Sal               |R$ 8,90           |\n");
+	printf("|006               |Sal               |R$ %.2f           |\n", tab_preco[5]);
 	printf("----------------------------------------------------------\n");
-	printf("|007               |Cafe              |R$ 8,90           |\n");
+	printf("|007               |Cafe              |R$ %.2f           |\n", tab_preco[6]);
 	printf("----------------------------------------------------------\n");
-	printf("|008               |Manteiga          |R$ 8,90           |\n");
+	printf("|008               |Manteiga          |R$ %.2f           |\n", tab_preco[7]);
 	printf("----------------------------------------------------------\n");
-	printf("|009               |Leite             |R$ 8,90           |\n");
+	printf("|009               |Leite             |R$ %.2f           |\n", tab_preco[8]);
 	printf("----------------------------------------------------------\n");
-	printf("|010               |Biscoito          |R$ 8,90           |\n");
+	printf("|010               |Biscoito          |R$ %.2f           |\n", tab_preco[9]);
 	printf("----------------------------------------------------------\n");
+	printf("\n");
+	
+	while(cod){
+		printf("Insira o codigo do PRODUTO: ");
+		scanf("%d", cod);
+	}
 
 }
